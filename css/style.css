@@ -1,0 +1,181 @@
+/* general styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 75vw;
+    margin: 0 auto;
+}
+.some-content{
+    font-size: 1.2rem;
+    color: #333333;
+    margin: 0 0 2rem 0;    
+}
+/* styling nav bar */
+nav {
+    width: 100%;
+    position: sticky;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.try-it a {
+    text-decoration: none;
+    color: #FFA8E0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    border: 2px solid #FFA8E0;
+    padding: 10px 45px;
+    border-radius: 50px;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.try-it a:hover {
+    box-shadow: #CCCCCC 0px 5px 10px;
+}
+
+/* styling header */
+header {
+    height: 50vh;
+}
+
+header .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 0 0 2rem 0;
+}
+
+header .some-content {
+    padding: 0 14rem;
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    background-color: #FF52C1;
+    color: #ffffff;
+    padding: 15px 45px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: box-shadow .3s ease-in-out;
+}
+
+header a:hover {
+    box-shadow: #CCCCCC 0px 5px 10px;
+}
+
+/* styling community section */
+.community .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.community-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 5rem;
+}
+
+.community-container .community-content h4 {
+    color: #7f8d99;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+
+.community-container .community-content h4 span {
+    font-size: 5rem;
+    display: block;
+    color: #000;
+    font-weight: bold;
+}
+
+/* styling grow together section */
+.grow-together {
+    position: relative;
+    background-color: #F6FBFF;
+    margin:  20vh 0;
+}
+
+.grow-together::before{
+    content: '';
+    position: absolute;
+    top: -20vh;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 20vh;
+    background-image: url('../images/bg-section-top-desktop-1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grow-together::after{
+    content: '';
+    position: absolute;
+    bottom: -20vh;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 20vh;
+    background-image: url('../images/bg-section-bottom-desktop-1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grow-together .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grow-together-content {
+    width: 50%;
+}
+
+.grow-together-content h4 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 0 0 2rem 0;
+}
+.grow-together-content .some-content{
+    padding: 0 5rem 0 0;
+}
+.grow-together-image {
+    width: 50%;
+}
+
+.grow-together-image img {
+    width: 100%;
+}
