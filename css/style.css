@@ -715,7 +715,15 @@ form .btn {
     nav .container .logo{
     width: 50%;
     }
+    .container .logo img {
+        width: 100%;
+    }
     .try-it {
         width: 50%;
+    }
+
+    .try-it a {
+        padding:  5px;
+        margin-left: 15px;
     }
 }
