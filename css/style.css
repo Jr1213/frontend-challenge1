@@ -301,12 +301,12 @@ footer .container {
     margin: 1rem 0;
 }
 
-.contacts ul li a {
-    text-decoration: none;
+.contacts ul li span {
+    cursor: pointer;
     color: #FFFFFF;
 }
 
-.contacts ul li a i {
+.contacts ul li span i {
     margin: 0px 1rem 0px 0px;
 }
 
@@ -483,7 +483,7 @@ form .btn {
         width: 80%;
     }
 
-    .contacts ul li a {
+    .contacts ul li span {
         font-size: 1.5rem;
     }
 }
@@ -595,7 +595,7 @@ form .btn {
     .left-section .some-content {
         width: 80%;
     }
-    .contacts ul li a{
+    .contacts ul li span{
         font-size: 1.5rem;
     }
 }
@@ -709,7 +709,7 @@ form .btn {
     .left-section .some-content {
         width: 80%;
     }
-    .contacts ul li a{
+    .contacts ul li span{
         font-size: 1.5rem;
     }
     nav {
