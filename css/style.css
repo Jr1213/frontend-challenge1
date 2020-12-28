@@ -300,13 +300,16 @@ footer .container {
 .contacts ul li {
     margin: 1rem 0;
 }
-
-.contacts ul li span {
+.contacts ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.contacts ul li span  {
     cursor: pointer;
     color: #FFFFFF;
 }
 
-.contacts ul li span i {
+.contacts ul li span i,.contacts ul li a i {
     margin: 0px 1rem 0px 0px;
 }
 
@@ -368,7 +371,7 @@ form .btn {
 
 /* responsive behaver */
 
-@media(min-width : 768px) {
+@media(max-width : 768px) {
     body {
         font-size: 10px;
     }
@@ -488,117 +491,6 @@ form .btn {
     }
 }
 
-@media (max-width : 300px) {
-    body {
-        font-size: 4px;
-    }
-
-    header {
-        margin: 5vh 0 0 0;
-        text-align: center;
-    }
-
-    header .container h3 {
-        max-width: 80vw;
-    }
-
-    header .container .some-content {
-        padding: 0px 2rem;
-    }
-
-    .community .container img {
-        width: 100%;
-    }
-
-    .community-container {
-        flex-direction: column;
-    }
-
-    .community-container .community-content {
-        margin-bottom: 3rem;
-    }
-
-    .community-container .community-content img {
-        width: 25%;
-    }
-
-    .grow-together .container,
-    .conversation .container {
-        flex-direction: column;
-    }
-
-    .grow-together-content {
-        width: 100%;
-        text-align: center;
-        order: 3;
-        margin: 3rem 0px 0px 0px;
-    }
-
-    .some-content {
-        font-size: 1.5rem;
-        font-weight: 500;
-    }
-
-    .grow-together-content .some-content {
-        padding: 0;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .conversation-content {
-        width: 100%;
-    }
-
-    .build-community .container {
-        text-align: center;
-    }
-    footer .container{
-        flex-direction: column;
-    }
-    footer .container .right-section{
-        order:  -1;
-        width: 100%;
-    }
-
-    .right-section h3 {
-        font-size: 2rem;
-    }
-
-    .right-section .some-content {
-        padding: 2rem 6rem 2rem 0px;
-    }
-
-    form{
-        display: inline-block;
-    }
-
-    form input{
-        margin-bottom: 1rem;
-        font-size: 2rem;
-        padding: 1rem 1rem;
-        width: 100%;
-    }
-
-    form .btn {
-        display: inline-block;
-        font-size: 2rem;
-        width: 50%;
-        padding: 1rem;
-        margin: 2rem 0;
-        transform: translateX(100%);
-        text-align: center;
-    }
-
-    .left-section {
-        width: 100%;
-    }
-    .left-section .some-content {
-        width: 80%;
-    }
-    .contacts ul li span{
-        font-size: 1.5rem;
-    }
-}
 @media (max-width : 576px) {
     body {
         font-size: 8px;
@@ -728,5 +620,117 @@ form .btn {
     .try-it a {
         padding:  5px;
         margin-left: 15px;
+    }
+}
+
+@media (max-width : 300px) {
+    body {
+        font-size: 4px;
+    }
+
+    header {
+        margin: 5vh 0 0 0;
+        text-align: center;
+    }
+
+    header .container h3 {
+        max-width: 80vw;
+    }
+
+    header .container .some-content {
+        padding: 0px 2rem;
+    }
+
+    .community .container img {
+        width: 100%;
+    }
+
+    .community-container {
+        flex-direction: column;
+    }
+
+    .community-container .community-content {
+        margin-bottom: 3rem;
+    }
+
+    .community-container .community-content img {
+        width: 25%;
+    }
+
+    .grow-together .container,
+    .conversation .container {
+        flex-direction: column;
+    }
+
+    .grow-together-content {
+        width: 100%;
+        text-align: center;
+        order: 3;
+        margin: 3rem 0px 0px 0px;
+    }
+
+    .some-content {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .grow-together-content .some-content {
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .conversation-content {
+        width: 100%;
+    }
+
+    .build-community .container {
+        text-align: center;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .right-section{
+        order:  -1;
+        width: 100%;
+    }
+
+    .right-section h3 {
+        font-size: 2rem;
+    }
+
+    .right-section .some-content {
+        padding: 2rem 6rem 2rem 0px;
+    }
+
+    form{
+        display: inline-block;
+    }
+
+    form input{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        padding: 1rem 1rem;
+        width: 100%;
+    }
+
+    form .btn {
+        display: inline-block;
+        font-size: 2rem;
+        width: 50%;
+        padding: 1rem;
+        margin: 2rem 0;
+        transform: translateX(100%);
+        text-align: center;
+    }
+
+    .left-section {
+        width: 100%;
+    }
+    .left-section .some-content {
+        width: 80%;
+    }
+    .contacts ul li span{
+        font-size: 1.5rem;
     }
 }
