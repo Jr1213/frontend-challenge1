@@ -709,4 +709,11 @@ form .btn {
     .contacts ul li a{
         font-size: 1.5rem;
     }
+    
+    nav .container .logo{
+    width: 50%;
+    }
+    .try-it {
+        width: 50%;
+    }
 }
