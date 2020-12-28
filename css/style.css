@@ -709,7 +709,9 @@ form .btn {
     .contacts ul li a{
         font-size: 1.5rem;
     }
-    
+    nav {
+        height: auto;
+    }
     nav .container .logo{
     width: 50%;
     }
