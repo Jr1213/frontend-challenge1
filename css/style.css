@@ -9,19 +9,34 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* utilites */
 .container {
     max-width: 75vw;
     margin: 0 auto;
 }
-.some-content{
+
+.some-content {
     font-size: 1.2rem;
     color: #333333;
-    margin: 0 0 2rem 0;    
+    margin: 0 0 2rem 0;
 }
+
+.titels {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin: 0 0 2rem 0;
+}
+
+
+
 /* styling nav bar */
 nav {
     width: 100%;
     position: sticky;
+    top: 0px;
+    background-color: #FFFFFF;
+    z-index: 1000;
 }
 
 nav .container {
@@ -125,10 +140,10 @@ header a:hover {
 .grow-together {
     position: relative;
     background-color: #F6FBFF;
-    margin:  20vh 0;
+    margin: 20vh 0;
 }
 
-.grow-together::before{
+.grow-together::before {
     content: '';
     position: absolute;
     top: -20vh;
@@ -141,7 +156,7 @@ header a:hover {
     background-size: cover;
 }
 
-.grow-together::after{
+.grow-together::after {
     content: '';
     position: absolute;
     bottom: -20vh;
@@ -153,6 +168,7 @@ header a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .grow-together .container {
     display: flex;
     justify-content: center;
@@ -163,19 +179,177 @@ header a:hover {
     width: 50%;
 }
 
-.grow-together-content h4 {
-    font-weight: bold;
-    font-size: 2.5rem;
-    text-transform: capitalize;
-    margin: 0 0 2rem 0;
-}
-.grow-together-content .some-content{
+
+.grow-together-content .some-content {
     padding: 0 5rem 0 0;
 }
+
 .grow-together-image {
     width: 50%;
 }
 
 .grow-together-image img {
     width: 100%;
+}
+
+/* styling conversation section */
+.conversation {
+    margin: 40vh 0;
+}
+
+.conversation .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conversation .container .conversation-content {
+    order: 3;
+}
+
+.conversation-content {
+    width: 50%;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.conversation-image {
+    width: 50%;
+}
+
+.conversation-image img {
+    width: 100%;
+}
+
+/* styling build your community section */
+
+.build-community{
+    margin: 40vh 0;
+}
+
+.build-community .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.build-community .titels {
+    font-size: 3rem;
+} 
+.build-community .btn:hover {
+    box-shadow: #7f8d99 0px 4px 4px;
+}
+.build-community .btn {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #FF52C1;
+    padding: 15px 45px;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+}
+/* styling footer */
+footer{
+    position: relative;
+    background: #00252E;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    top: -20vh;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    background-image: url('../images/bg-footer-top-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section{
+    width: 50%;;
+}
+.left-section .logo{
+    filter: grayscale(100%);
+    margin: 2rem 0;
+}
+
+.left-section .some-content {
+    color: #FFFFFF;
+    width: 50%;
+    margin:2rem  0;
+}
+.contacts ul{
+    list-style: none;
+}
+.contacts ul li {
+    margin: 1rem 0;
+}
+.contacts ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.contacts ul li a i {
+    margin: 0px 1rem 0px 0px ;
+}
+.socail i{
+    font-size: 2rem;
+    padding: 5px 5px;
+    color: #F6FBFF;
+    margin: 2rem 0;
+}
+
+.socail i:hover{
+    cursor: pointer;
+    color: #0d5492;
+}
+.right-section{
+    width: 50%;
+}
+
+.right-section h3{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 2rem 0  ;
+}
+
+.right-section .some-content {
+    color: #FFFFFF;
+}
+
+form {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    width: 60%;
+    border-radius:  15px;
+    padding: 15px 10px;
+}
+input:focus {
+    outline: none;
+}
+form .btn {
+    width: 30%;
+    
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #FF52C1;
+    padding: 15px 45px;
+    border-radius: 15px;
+    transition: ease-in-out 250ms;
 }
